@@ -25,7 +25,6 @@
 ### 安装方法
 
 - 克隆本仓库
-```bash
 git clone https://github.com/deeexiao/water-reminder.git
 8 Cups A Day!
 
