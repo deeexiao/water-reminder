@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>每日8杯水提醒</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>每日8杯水提醒</h1>
+    
+    <!-- 移除植物图标容器 -->
+    
+    <div class="progress-container">
+      <div class="progress-text">今日进度: <span id="current-cups">0</span>/<span id="cups-goal">8</span> 杯</div>
+      <div class="progress-bar">
+        <div id="progress" class="progress"></div>
+      </div>
+      
+      <!-- 添加倒计时进度条 -->
+      <div class="countdown-container">
+        <div class="countdown-bar">
+          <div id="countdown-progress" class="countdown-progress"></div>
+        </div>
+        <div class="countdown-text"><span id="countdown-time">60:00</span></div>
+      </div>
+    </div>
+    
+    <div class="buttons">
+      <button id="add-cup">喝了一杯水 💧</button>
+      <button id="reset">开始</button>
+    </div>
+    
+    <div class="settings">
+      <h2>设置</h2>
+      <div class="setting-item">
+        <label for="start-time">开始提醒时间:</label>
+        <input type="time" id="start-time" value="08:00">
+      </div>
+      <div class="setting-item">
+        <label for="end-time">结束提醒时间:</label>
+        <input type="time" id="end-time" value="22:00">
+      </div>
+      <div class="setting-item">
+        <label for="interval">提醒间隔 (分钟):</label>
+        <input type="number" id="interval" min="30" max="180" value="60">
+      </div>
+      <button id="save-settings">保存设置</button>
+    </div>
+    
+    <div class="footer">
+      <p>保持水分摄入，健康每一天！</p>
+      <a href="#" id="options-link">高级设置</a>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
