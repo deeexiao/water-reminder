@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "每日8杯水提醒",
+  "version": "1.0",
+  "description": "提醒您每天喝够8杯水，保持健康水分摄入",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "options_page": "options.html",  
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "alarms",
+    "notifications",
+    "windows"
+  ],
+  "web_accessible_resources": [{
+    "resources": [
+      "assets/reminder.mp3",
+      "assets/complete.mp3"
+    ],
+    "matches": ["<all_urls>"]
+  }]
+}
