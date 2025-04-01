@@ -24,7 +24,6 @@
 
 - 克隆本仓库
 git clone https://github.com/deeexiao/water-reminder.git
-8 Cups A Day!
 
 - 在 Chrome 浏览器中安装
    - 打开 Chrome，访问 chrome://extensions/
