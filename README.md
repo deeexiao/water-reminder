@@ -1,4 +1,4 @@
-# 喝水！每天8杯水（water-reminder）——Chrome Extension
+# 喝水！每天8杯水（water-reminder）—— Chrome Extension
 
 一个帮助你养成健康饮水习惯的 Chrome 扩展程序。通过智能提醒和趣味化的植物成长系统，让喝水变得更有趣、更持续。
 
